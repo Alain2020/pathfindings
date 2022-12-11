@@ -5,3 +5,10 @@ from time import strftime
 
 root = Tk()
 root.title("clock")
+
+def time():
+    string = strftime('%H:%M:%S %p')
+    label.config(text=string)
+
+label = Label(root, foot=("ds-digital", 80), background= "black", foreground= "cyan")
+label.pack(anchor='center')
